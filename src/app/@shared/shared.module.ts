@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/navbar/header/header.component';
 import { MenuComponent } from './components/navbar/menu/menu.component';
 import { BtnComponent } from './components/btn/btn.component';
 import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const components = [
   NavbarComponent,
@@ -19,7 +20,9 @@ const components = [
   LogoComponent,
   ContactComponent,
   HeaderComponent,
-  MenuComponent
+  MenuComponent,
+  BtnComponent,
+  NotFoundComponent
 ];
 
 const modules = [
@@ -29,8 +32,7 @@ const modules = [
 
 @NgModule({
   declarations: [
-    components,
-    BtnComponent
+    components
   ],
   imports: [
     ...modules,
