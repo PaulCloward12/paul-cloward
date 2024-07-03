@@ -1,0 +1,28 @@
+<button class="relative group transition-all duration-500 overflow-clip rounded-md
+{{
+    this.bg==='DB' || this.bg==='DARKBLUE'?
+    'bg-blue-950 text-white border-none hover:bg-white hover:text-blue-950  hover:border-blue-950 hover:border-2 hover:border-solid':
+    this.bg==='B' || this.bg==='BLUE'?
+    'bg-blue-500 text-white border-none hover:bg-blue-50 hover:text-blue-500 hover:border-blue-500 hover:border-1 hover:border-solid':
+    this.bg==='G' || this.bg==='GREEN'?
+    'bg-emerald-500 text-white border-none hover:bg-emerald-50 hover:text-emerald-500 hover:border-emerald-500 hover:border-1 hover:border-solid':
+    this.bg==='BLACK'?
+    'bg-black text-white border-none hover:bg-white hover:text-black hover:border-black hover:border-2 hover:border-solid':
+    ''
+}}
+{{
+    this.size==='S'?
+    'px-5 py-2font-medium text-md':
+    this.size==='M'?
+    'px-7 py-3 font-medium text-lg':
+    'px-4 xl:px-8 py-4 font-semibold text-lg'
+}}
+{{
+    this.shadow ?
+    'shadow-lg' :
+    'shadow-none'
+}}">
+    <span class="z-30 relative">
+        {{this.name}}
+    </span>
+</button>
