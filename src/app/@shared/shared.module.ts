@@ -10,7 +10,7 @@ import { HeaderComponent } from './components/navbar/header/header.component';
 import { MenuComponent } from './components/navbar/menu/menu.component';
 import { BtnComponent } from './components/btn/btn.component';
 import { RouterModule } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const components = [
   NavbarComponent,
